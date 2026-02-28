@@ -1,5 +1,5 @@
-# 使用 Node.js 18 基础镜像，预装 git
-FROM node:18-bullseye
+# 使用 Node.js 22 基础镜像，预装 git
+FROM node:22-bullseye
 
 # 安装 git 依赖
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
