@@ -12,7 +12,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安装项目依赖（用 pnpm 替代 npm，适配项目构建逻辑）
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 # 复制所有代码
 COPY . .
