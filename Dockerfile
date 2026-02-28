@@ -1,5 +1,5 @@
-# 使用 Node.js 20 基础镜像（满足项目版本要求）
-FROM node:20-bullseye
+# 使用 Node.js 22 基础镜像（满足项目版本要求）
+FROM node:22-bullseye
 
 # 安装 git 和 pnpm（新增 pnpm 安装步骤）
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/* \
